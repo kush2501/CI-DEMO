@@ -9,9 +9,10 @@ def sub(a, b):
 def mul(a, b):
     return a*b
 
+
 if "__name__" == "__main__":
 
     result1 = add(4, 5)
     result2 = sub(4, 1)
-    result3 = mul(6,7)
+    result3 = mul(6, 7)
     print(result1, result2, result3)

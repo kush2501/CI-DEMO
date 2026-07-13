@@ -30,16 +30,18 @@ jobs:
           pip install flake8
 
       - name: run flake8
-        run: 
+        run: |
           flake8 app.py 
 
   testing:
     needs: linting
     runs-on: ubuntu-latest
+
     steps:
       - name: code checkout
-        uses: actions/checkout
-      - name: setup python
+        uses: actions/checkout@v4
+
+      - name: setup python      
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
